@@ -14,8 +14,8 @@ Free Bootstrap 5 HTML Template
 -----------------------------------------*/
 :root {
   --ronin-color:                  #67008f;
-  --white-color:                  #e5d4ea;
-  --primary-color:                #5db593;
+  --white-color:                  #ffffff;
+  --primary-color:                #f5e2fd;
   --secondary-color:              #dc3545;
   --section-bg-color:             #ffffff;
   --dark-color:                   #000000;
@@ -240,6 +240,87 @@ strong {
 .custom-bg-primary:hover {
   background: var(--white-color);
   color: var(--dark-color);
+}
+
+/*---------------------------------------
+  MY Stuff              
+-----------------------------------------*/
+.accordion-button {
+  background-color: #f8f9fa; /* Adjust as needed */
+  color: #862bbe; /* Adjust as needed */
+  text-align: left;
+  padding: 15px;
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-button:hover {
+  background-color: #e9ecef; /* Adjust as needed */
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #e9ecef; /* Adjust as needed */
+  color: #d9442a; /* Adjust as needed */
+}
+
+.accordion-body p {
+  margin: 0;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.project {
+  margin-bottom: 30px; /* Or any spacing you prefer between projects */
+}
+
+.project .row {
+  align-items: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project h5, .project p {
+  margin: 15px 0;
+}
+
+
+
+.ancient-japanese h2,
+.ancient-japanese p,
+.ancient-japanese a {
+  font-family: 'Your desired font-family, like Noto Serif JP', serif;
+  color: #000000; /* or any color that suits your design */
+}
+
+.ancient-japanese a {
+  text-decoration: underline;
+}
+
+.ancient-japanese h2 {
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+.ancient-japanese p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 1.2em;
+}
+
+.custom-btn {
+  background-color: #9d9171; /* Or any other suitable color */
+  color: #ffffff;
 }
 
 
