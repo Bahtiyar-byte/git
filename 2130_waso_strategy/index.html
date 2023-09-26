@@ -704,60 +704,29 @@ Free Bootstrap 5 HTML Template
         <script src="js/click-scroll.js"></script>
         <script src="js/custom.js"></script>
 
-
-       
-        
-        <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-        <script type='text/javascript'>
-            var initESW = function(gslbBaseURL) {
-                embedded_svc.settings.displayHelpButton = true; //Or false
-                embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
-        
-                //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-                //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-        
-                //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-                //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
-        
-                // Settings for Chat
-                //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-                    // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-                    // Returns a valid button ID.
-                //};
-                //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-                //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-                //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
-        
-                embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-                embedded_svc.settings.entryFeature = 'LiveAgent';
-        
-                embedded_svc.init(
-                    'https://sfdx-baha-dev-ed.my.salesforce.com',
-                    'https://sfdx-baha-dev-ed.my.salesforce-sites.com/',
-                    gslbBaseURL,
-                    '00D8c000006dQRP',
-                    'Bookstore_Live_Chat_Team',
-                    {
-                        baseLiveAgentContentURL: 'https://c.la5-c2-ia4.salesforceliveagent.com/content',
-                        deploymentId: '5728c000000UJFF',
-                        buttonId: '5738c000000UK31',
-                        baseLiveAgentURL: 'https://d.la5-c2-ia4.salesforceliveagent.com/chat',
-                        eswLiveAgentDevName: 'Bookstore_Live_Chat_Team',
-                        isOfflineSupportEnabled: false
-                    }
-                );
+        <script type="module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+          
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+              apiKey: "AIzaSyDO-bTa3-aKFwXb0dJ8wYeAKV2KvdAonV8",
+              authDomain: "digital-ronin-7dbfe.firebaseapp.com",
+              projectId: "digital-ronin-7dbfe",
+              storageBucket: "digital-ronin-7dbfe.appspot.com",
+              messagingSenderId: "794313393921",
+              appId: "1:794313393921:web:d53fc977babfb3704b3d00",
+              measurementId: "G-L30RH4SFQD"
             };
-        
-            if (!window.embedded_svc) {
-                var s = document.createElement('script');
-                s.setAttribute('src', 'https://sfdx-baha-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-                s.onload = function() {
-                    initESW(null);
-                };
-                document.body.appendChild(s);
-            } else {
-                initESW('https://service.force.com');
-            }
-        </script>
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+          </script>
+     
     </body>
 </html>
