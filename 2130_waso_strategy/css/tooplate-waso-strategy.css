@@ -16,7 +16,7 @@ Free Bootstrap 5 HTML Template
   --ronin-color:                  #67008f;
   --white-color:                  #ffffff;
   --primary-color:                #f5e2fd;
-  --secondary-color:              #dc3545;
+  --secondary-color:              #dd7ef3;
   --section-bg-color:             #ffffff;
   --dark-color:                   #000000;
   --p-color:                      #717275;
@@ -323,6 +323,9 @@ strong {
   color: #ffffff;
 }
 
+.text-italic{
+  font-style: italic !important;
+}
 
 /*---------------------------------------
   NAVIGATION              
@@ -364,7 +367,7 @@ strong {
 .navbar-brand {
   font-size: 26px;
   font-weight: var(--font-weight-bold);
-  /*color: var(--primary-color);*/
+  color: var(--primary-color);
   color: aqua;
 }
 
@@ -385,7 +388,7 @@ strong {
 .navbar-nav .nav-link.active, 
 .navbar-nav .nav-link:hover,
 .projects-detail-page .navbar-nav .nav-link.active:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .projects-detail-page .navbar-nav .nav-link.active {
@@ -646,7 +649,7 @@ strong {
   margin-right: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
-  padding: 30px;
+  padding: 20px;
   transition: all 0.3s ease-in-out;
 }
 
