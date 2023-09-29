@@ -278,7 +278,7 @@ strong {
 }
 
 .project {
-  margin-bottom: 30px; /* Or any spacing you prefer between projects */
+  margin-bottom: 50px; /* Or any spacing you prefer between projects */
 }
 
 .project .row {
@@ -286,7 +286,7 @@ strong {
 }
 
 .project img {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -471,8 +471,8 @@ strong {
 -----------------------------------------*/
 .site-header {
   background: var(--primary-color);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .site-header-icon {
